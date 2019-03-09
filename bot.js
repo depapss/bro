@@ -182,4 +182,4 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 
 
- client.login('NTUyNTc2NTI2MzAyOTY5ODc0.D2UfhQ.o8PEsTTaUg6mMjI08kNG3MilD4k');
+client.login(process.env.BOT_TOKEN);
