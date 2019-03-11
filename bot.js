@@ -27,11 +27,8 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
- const kbooshtoken = "NTQxMTk1MTM0OTE0NTI3MjQy.D2Vngg.4SJBoHYcVZAd4Jz4uanEULHs3jg"
-      kboosh.on('ready', () => {
-        kboosh.user.setGame(`the wolf`,'https://www.twitch.tv/TEST-Broadcast');
-          console.log('yes.sur');
-  
+ 
+ 
         });
 ,ti={}  
 ,spee={};
@@ -49,59 +46,59 @@ const sql = require("sqlite");
 
 client.on('message', message => {
 
- 
+ 
 
     if (message.content === "قفل الشات") {
 
-                        if(!message.channel.guild) return message.reply(' This command only for servers');
+                        if(!message.channel.guild) return message.reply(' This command only for servers');
 
- 
+ 
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
 
-           message.channel.overwritePermissions(message.guild.id, {
+           message.channel.overwritePermissions(message.guild.id, {
 
-         SEND_MESSAGES: false
+         SEND_MESSAGES: false
 
- 
+ 
 
-           }).then(() => {
+           }).then(() => {
 
-               message.reply("تم تقفيل الشات :white_check_mark: ")
+               message.reply("تم تقفيل الشات :white_check_mark: ")
 
-           });
+           });
 
-             }
+             }
 
- 
+ 
 
 if (message.content === "فتح الشات") {
 
-    if(!message.channel.guild) return message.reply(' This command only for servers');
+    if(!message.channel.guild) return message.reply(' This command only for servers');
 
- 
+ 
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
 
-           message.channel.overwritePermissions(message.guild.id, {
+           message.channel.overwritePermissions(message.guild.id, {
 
-         SEND_MESSAGES: true
+         SEND_MESSAGES: true
 
- 
+ 
 
-           }).then(() => {
+           }).then(() => {
 
-               message.reply("تم فتح الشات:white_check_mark:")
+               message.reply("تم فتح الشات:white_check_mark:")
 
-           });
+           });
 
-             }
+             }
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 });
 
